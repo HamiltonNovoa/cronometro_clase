@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp"
+tools:context=".StopwatchActivity">
+
+<TextView
+    android:id="@+id/time_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:textAppearance="@android:style/TextAppearance.Large"
+    android:textSize="56dp"/>
+
+
+<TableRow
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:background="#80FF00"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="18dp"
+        android:onClick="onClickStart"
+        android:text="@string/start" />
+
+</TableRow>
+
+<TableRow
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/vuelta_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="20dp"
+        android:background="#58ACFA"
+        android:layout_marginTop="20dp"
+        android:onClick="onClickVuelta"
+        android:text="@string/vuelta" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#FE9A2E"
+        android:onClick="onClickReset"
+        android:text="@string/reset" />
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="#FF0000"
+        android:onClick="onClickStop"
+        android:text="@string/stop" />
+</TableRow>
+
+<ListView
+    android:id="@+id/list"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="20dp">
+</ListView>
+
+</LinearLayout>
